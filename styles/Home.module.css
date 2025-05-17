@@ -1,0 +1,481 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 5px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Navbar için alan bırakıyoruz */
+  position: relative;
+  margin-top: 30px;
+}
+
+.logoContainer {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  z-index: 10;
+  display: none; /* Logo'yu gizliyoruz, navbar'ı kullanacağız */
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-top: 20px; /* Navbar'dan sonra daha az boşluk bırakıyoruz */
+}
+
+.header h1 {
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.header p {
+  color: #666666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  justify-content: center;
+}
+
+.tabButton {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  color: #333333;
+}
+
+.tabButton.active {
+  color: #1851E5;
+  border-bottom: 3px solid #1851E5;
+}
+
+.uploadTab,
+.designTab {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.uploadSection {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.fileUpload {
+  text-align: center;
+  border: 2px dashed #e0e0e0;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.fileUpload.dragActive {
+  border-color: #1851E5;
+  background-color: rgba(24, 81, 229, 0.05);
+}
+
+.fileUpload input[type="file"] {
+  display: none;
+}
+
+.fileUpload label {
+  background-color: #1851E5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.fileUpload label:hover {
+  background-color: #0D3BB8;
+}
+
+.uploadInfo {
+  margin-top: 10px;
+  color: #666666;
+}
+
+.previewContainer {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  flex: 2;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.toolbar button {
+  background-color: #1851E5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar button:hover {
+  background-color: #0D3BB8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar select {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23333333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 30px;
+}
+
+.toolbar select option {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px;
+}
+
+.receiptViewerContainer {
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.receiptPreview {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  min-height: 400px;
+  max-width: 100%;
+  overflow: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.thermalReceipt {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  white-space: pre;
+  transform-origin: top center;
+  width: fit-content;
+  line-height: 1.2;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #000;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.xmlPreview {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.xmlPreview h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.xmlPreview pre {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Fiş tasarımı bölümü stilleri */
+.designTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media print {
+  .header,
+  .tabs,
+  .uploadSection,
+  .toolbar,
+  .xmlPreview {
+    display: none;
+  }
+  
+  .previewContainer {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  .receiptPreview {
+    border: none;
+    padding: 0;
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666666;
+  font-size: 18px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.loading p {
+  margin: 0;
+}
+
+.designContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .designContainer {
+    flex-direction: column;
+  }
+  
+  .designOptionsContainer {
+    max-width: 100% !important;
+  }
+  
+  .previewContainer {
+    width: 100%;
+  }
+}
+
+.designOptionsContainer {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.designOptions {
+  color: #333333;
+}
+
+.optionsSection {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.optionsSection h4 {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.optionGroup {
+  margin-bottom: 10px;
+}
+
+.optionGroup label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.optionGroup input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.optionGroup input[type="text"],
+.optionGroup input[type="number"],
+.optionGroup input[type="date"],
+.optionGroup input[type="time"],
+.optionGroup select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.optionGroup input:disabled,
+.optionGroup select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: none;
+}
+
+.autoUpdateContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.autoUpdateContainer label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.autoUpdateContainer input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.primaryBtn {
+  background-color: #1851E5;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primaryBtn:hover {
+  background-color: #0D3BB8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.primaryBtn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.secondaryBtn {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.secondaryBtn:hover {
+  background-color: #7f8c8d;
+}
+
+.secondaryBtn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Animation for loading */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* Animation for tabs */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.designTab, .uploadTab {
+  animation: slideIn 0.3s ease-out forwards;
+} 
