@@ -1,3 +1,5 @@
+ROBOTPOS FİŞ TASARLAMA ARAYÜZÜ
+
 - Önce gerekliliklerin yüklenmesi lazım => npm install
 - Sonrasında dosya dizininde proje çalıştırılabilir => npm run dev
 
