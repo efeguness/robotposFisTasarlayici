@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<!-- F.basaran 13.03.2020 -->
+<infReport version="2" columncount="40" pagerow="30" >
+	<panels table="Customer" type="header"> 
+		<bricks field="CustomerName" format="MUSTERI# {0}" left="0" width="40" row="0" shownull="false" multiline="True" align="left" />
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="1" shownull="false" multiline="false" align="left" />
+		<bricks field="AddressText" format="{0}" left="0" width="40" row="2" shownull="false" multiline="True" align="left" />
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="3" shownull="false" multiline="false" align="left" />
+		<bricks field="AddressNotes" format="{0}" left="0" width="40" row="4" shownull="false" multiline="True" align="left" />
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="5" shownull="false" multiline="false" align="left" />
+	</panels>
+	<panels table="header" type="header"> 
+	<bricks font="11" field="AutoID" format="PEŞİN FATURA" left="0" width="25" row="0" shownull="false" multiline="false" align="center" />
+		<bricks font="10" field="SpecificCustomerName" format="Musteri Adı: {0}" left="0" width="40" row="1" shownull="false" multiline="true" align="left" />
+		<bricks font="10"  field="DineInTableText" format="MASA: {0}" left="0" width="25" row="2" shownull="false" multiline="false" align="none" />
+		<bricks font="10"  field="TableGroupText" format="GRUP: {0}" left="0" width="25" row="3" shownull="false" multiline="false" align="none" />
+		<bricks font="00"  field="OrderDateTime" format="{0:dd.MM.yyyy HH:mm}" left="0" width="20" row="4" shownull="false" multiline="false" align="left" />
+		<bricks field="OrderPhone" format="T# {0}" left="20" width="40" row="4" shownull="True" multiline="True" align="left" />
+		<bricks field="AutoID" format="-----------------------------------------" left="0" width="50" row="5" shownull="false" multiline="false" align="left" />
+		<bricks field="EmployeeName" format="PERSONEL : {0}" left="0" width="25" row="6" shownull="false" multiline="false" align="none" />
+		<bricks field="StationID" format="TERMİNAL : {0}" left="25" width="15" row="6" shownull="false" multiline="false" align="right" /> 
+		<bricks field="AutoID" format="_________________________________________" left="0" width="40" row="7" shownull="false" multiline="false" align="none" />
+	</panels>
+	<panels table="detail">
+		<bricks field="Quantity" format="{0}" left="0" width="5" row="0" shownull="false" multiline="false" align="center" />
+		<bricks field="MenuItemText" format="{0}" left="5" width="25" row="0" shownull="false" multiline="true" align="left" />
+		<bricks field="ExtendedPrice" format="{0:n2}" left="30" width="10" row="0" shownull="false" multiline="true" align="right" />
+	</panels>
+	<panels table="header" type="header">
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="0" shownull="false" multiline="false" align="left" />
+		
+        
+		<bricks field="AutoID" format="ARA TOPLAM: " left="0" width="12" row="1" shownull="false" multiline="false" align="left" />
+		<bricks field="SubTotal" format="{0:n2} TL" left="13" width="14" row="1" shownull="false" multiline="false" align="left" />
+        <bricks field="SaleTaxAmount" format="KDV %5: {0:n2} DAHİL" left="0" width="40" row="2" shownull="false" multiline="True" align="left" />
+		<bricks field="AutoID" format="TOPLAM: " left="0" width="8" row="3" shownull="false" multiline="false" align="left" />
+		<bricks field="AmountDue" format="{0:n2} " left="8" width="14" row="3" shownull="false" multiline="false" align="left" />
+		<bricks field="AutoID" format="TL" left="14" width="40" row="3" shownull="false" multiline="false" align="left" />
+
+
+		<bricks field="AmountText" format="YAZI İLE: {0}" left="0" width="40" row="5" shownull="true" multiline="false" align="left" />
+		<bricks font="00"  field="AutoID" format="TESEKKUR EDERIZ." left="0" width="40" row="6" shownull="false" multiline="false" align="center" />   
+        
+	</panels>
+	<panels table="Payment" type="header">
+		<bricks field="PaymentMethodName" format="{0}" left="0" width="10" row="0" shownull="false" multiline="false" align="left" />
+		<bricks field="AmountPaid" format="{0:n2}" left="10" width="30" row="0" shownull="false" multiline="false" align="left"/>
+	</panels>
+	<panels table="header" type="header">
+	</panels>
+</infReport>

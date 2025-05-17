@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<!-- F.basaran 13.03.2020 -->
+<infReport version="2" columncount="40" pagerow="30" >
+	<panels table="Customer" type="header">  
+		<bricks  font="10" field="CustomerName" format="MUSTERI# {0}" left="0" width="40" row="0" shownull="false" multiline="True" align="left" />
+		<bricks  font="00" field="AutoID" format="-------------------------------------------" left="0" width="40" row="1" shownull="false" multiline="false" align="left" />
+		<bricks field="AddressText" format="{0}" left="0" width="40" row="2" shownull="false" multiline="True" align="left" />
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="3" shownull="false" multiline="false" align="left" />
+		<bricks field="AddressNotes" format="{0}" left="0" width="40" row="4" shownull="false" multiline="True" align="left" />
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="5" shownull="false" multiline="false" align="left" />
+	</panels>
+	<panels table="header"  type="header">  
+	<bricks font="11" field="AutoID" format="VERANDA ALAÇATI" left="0" width="20" row="0" shownull="false" multiline="false" align="center" />
+		<bricks font="10" field="SpecificCustomerName" format="Musteri Adı: {0}" left="0" width="40" row="1" shownull="false" multiline="true" align="left" />
+		<bricks font="10" field="DineInTableText" format="MASA: {0}" left="0" width="25" row="2" shownull="false" multiline="false" align="none" />
+		<bricks font="10" field="TableGroupText" format="GRUP: {0}" left="0" width="25" row="3" shownull="false" multiline="false" align="none" />
+		<bricks font="00" field="OrderDateTime" format="{0:dd.MM.yyyy HH:mm}" left="0" width="20" row="4" shownull="false" multiline="false" align="left" />
+		<bricks field="OrderPhone" format="T# {0}" left="20" width="40" row="4" shownull="True" multiline="True" align="left" />
+		<bricks field="AutoID" format="-----------------------------------------" left="0" width="50" row="5" shownull="false" multiline="false" align="left" />
+		<bricks field="EmployeeName" format="PERSONEL : {0}" left="0" width="25" row="6" shownull="false" multiline="false" align="none" />
+		<bricks field="StationID" format="TERMİNAL : {0}" left="25" width="15" row="6" shownull="false" multiline="false" align="right" />    
+		<bricks field="AutoID" format="_________________________________________" left="0" width="40" row="7" shownull="false" multiline="false" align="none" />
+	</panels>
+	<panels table="detail">
+		<bricks field="Quantity" format="{0}" left="0" width="5" row="0" shownull="false" multiline="false" align="center" />
+		<bricks field="MenuItemText" format="{0}" left="5" width="25" row="0" shownull="false" multiline="true" align="left" />
+		<bricks field="ExtendedPrice" format="{0:n2}" left="30" width="10" row="0" shownull="false" multiline="true" align="right" />
+	</panels>
+	<panels table="header"  type="header">
+		<bricks field="AutoID" format="-------------------------------------------" left="0" width="40" row="0" shownull="false" multiline="false" align="left" />
+		<bricks font="10" field="AmountDue" format="TUTAR: {0:n2} TL" left="0" width="40" row="1" shownull="false" multiline="false" align="right" />
+		<bricks font="10" field="CashGratuity" format="Servis Bedeli: {0:n2} TL" left="0" width="40" row="2" shownull="false" multiline="false" align="right" />
+		<bricks font="10" field="PaidTotal" format="ÖDENEN: {0:n2} TL" left="0" width="40" row="4" shownull="false" multiline="True" align="right" />
+		<bricks field="DiscountTotalAmount" format="TOPLAM İNDİRİM: -{0:n2} TL" left="0" width="40" row="5" shownull="false" multiline="false" align="right" />
+		<bricks font="11" field="PaymentBalance" format="KALAN: {0:n2} TL" left="0" width="20" row="6" shownull="false" multiline="True" align="right" />
+		<bricks font="10"  field="AutoID" format="TESEKKUR EDERIZ." left="0" width="40" row="7" shownull="false" multiline="false" align="center" />   
+		<bricks font="00"  field="AutoID" format="(MALİ DEĞERİ YOKTUR)" left="0" width="40" row="8" shownull="false" multiline="false" align="center" />  
+		<bricks prefix="--x" suffix="x--" field="OrderID" format="{0}" left="0" width="40" row="9" shownull="false" multiline="false" align="left" />
+		<bricks field="OrderID" format="CEK # {0}" left="0" width="15" row="10" shownull="false" multiline="false" align="left" />
+		<bricks field="ReceiptNo" format="FIS# {0}" left="20" width="15" row="11" shownull="false" multiline="false" align="right" />
+		<bricks field="" format="" left="0" width="5" row="12" shownull="false" multiline="false" align="right" />
+		<bricks prefix="--20" suffix="20--" field="AutoID" format="RobotPOS INFINIA ver. 2020" left="0" width="40" row="13" shownull="false" multiline="false" align="left" />  
+	</panels>
+	<panels table="Payment"  type="header">
+		<bricks field="PaymentMethodName" format="{0}" left="0" width="10" row="0" shownull="false" multiline="false" align="left" />
+		<bricks field="AmountPaid" format="{0:n2}" left="10" width="30" row="0" shownull="false" multiline="false" align="left"/>
+	</panels>
+	<panels table="header"  type="header">
+		<bricks field="OrderNotes" format="{0}" left="0" width="40" row="0" shownull="false" multiline="True" align="left" />
+		<bricks field="OrderExternalNotes" format="{0}" left="0" width="40" row="1" shownull="false" multiline="True" align="left"/>
+		<bricks field="BarTabName" format="{0}" left="0" width="40" row="2" shownull="false" multiline="True" align="left"/>
+	</panels>
+</infReport>

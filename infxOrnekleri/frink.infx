@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<infReport version="2" columncount="40" pagerow="10">
+	<panels table="Detail" type="header">  
+		<bricks font="10" field="CustomerName" format="FRİNK" left="0" width="40" row="0" shownull="false" multiline="false" align="center" />
+		<bricks font="10" field="CustomerName" format="-------------------------------------------" left="0" width="40" row="1" shownull="false" multiline="false" align="left" />
+		<bricks font="10" field="CustomerName" format="MUSTERI: {0}" left="0" width="40" row="2" shownull="false" multiline="True" align="left" />
+		<bricks field="OrderDate" format="BILDIRI TARIHI: {0}" left="0" width="40" row="3" shownull="false" multiline="True" align="left" />
+		<bricks field="CustomerName" format="-------------------------------------------" left="0" width="40" row="4" shownull="false" multiline="false" align="left" />
+	</panels>
+	<panels table="Detail" type="header">
+		<bricks field="ProductText" format="{0}" left="0" width="40" row="0" shownull="true" multiline="true" align="left" />
+		<bricks field="FeaturesText" format="({0})" left="0" width="40" row="1" shownull="true" multiline="true" align="left" />
+	</panels>
+</infReport>

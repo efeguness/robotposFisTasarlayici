@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<infReport version="2" columncount="40" pagerow="10">
+  <panels table="Customer" type="header">
+    <bricks field="systemtime" format="{0:dd.MM.yyyy}" left="25" width="15" row="6" shownull="true" multiline="false" align="none" />
+   <bricks field="AutoID" format=" " left="16" width="20" row="2" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="3" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="4" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="5" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="6" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="7" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="8" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="9" shownull="true" multiline="false" align="none" />
+	  <bricks field="AutoID" format=" " left="16" width="20" row="10" shownull="true" multiline="false" align="none" />
+</panels>
+  <panels table="Customer" type="header">
+    <bricks field="CustomerFullName" format="{0}" left="0" width="40" row="1" shownull="true" multiline="true" align="left" />
+    <bricks field="AddressText" format="{0}" left="0" width="40" row="2" shownull="true" multiline="true" align="left" />
+    <bricks field="TaxOfficeName" format="{0}" left="0" width="20" row="3" shownull="true" multiline="true" align="left" />
+    <bricks field="TaxNumber" format="{0}" left="0" width="20" row="4" shownull="true" multiline="true" align="left" />
+    
+    <bricks field="" format=" " left="16" width="20" row="5" shownull="true" multiline="false" align="none" />
+  </panels>
+  <panels table="header" type="header">
+    <bricks font="10" field="SpecificCustomerName" format="{0}" left="0" width="20" row="0" shownull="false" multiline="true" align="none" />    
+    <bricks field="DineInTableText" format="MASA|{0}" left="0" width="25" row="1" shownull="false" multiline="true" align="none" />
+
+    <bricks field="EmployeeName" format="PERSONEL : {0}" left="0" width="24" row="2" shownull="false" multiline="false" align="none" />
+    <bricks field="OrderDateTime" format="{0:dd.MM. yyyy HH:mm}" left="24" width="18" row="2" shownull="false" multiline="false" align="right" />
+    <bricks font="00" field="" format="" left="0" width="40" row="3" shownull="false" multiline="false" align="none" />
+    <bricks font="00" field="OrderID" format="------------------------------------------" left="0" width="40" row="4" shownull="false" multiline="false" align="none" />
+  </panels>
+  <panels table="detail" type="detail">
+    <bricks field="Quantity" format="{0}" left="0" width="5" row="0" shownull="false" multiline="false" align="left" />
+    <bricks field="MenuItemText" format="{0}" left="5" width="25" row="0" shownull="true" multiline="false" align="left" />
+    <bricks field="ExtendedPrice" format="{0:n2}" left="32" width="10" row="0" shownull="true" multiline="false" align="left" />
+  </panels>
+  <panels table="header" type="footer">
+    <bricks field="" format="------------------------------------------" left="0" width="40" row="1" shownull="true" multiline="false" align="none" />
+    <bricks field="SubTotal" format="T U T A R :                     {0:n2}" left="0" width="40" row="2" shownull="true" multiline="false" align="none" />
+<bricks field="TaxTotal1" format="K D V  1 :                      {0:n2}" left="0" width="40" row="3" shownull="true" multiline="false" align="left" />    
+<bricks field="TaxTotal8" format="K D V  8 :                      {0:n2}" left="0" width="40" row="4" shownull="true" multiline="false" align="left" />
+    <bricks field="AmountDue" format="T O P L A M :                   {0:n2}" left="0" width="40" row="5" shownull="true" multiline="false" align="left" />
+    <bricks field="" format="  " left="16" width="20" row="6" shownull="true" multiline="false" align="none" />
+    <bricks field="" format="  " left="16" width="20" row="7" shownull="true" multiline="false" align="none" />
+    <bricks field="AmountText" format="{0}" left="0" width="40" row="8" shownull="true" multiline="false" align="left" />
+  </panels>
+<panels table="Payment" type="footer">
+    <bricks font="01" field="PaymentMethodName" format="{0}" left="0" width="15" row="0" shownull="false" multiline="false" align="left" />
+    <bricks font="01" field="AmountPaid" format="{0:n2}" left="15" width="30" row="0" shownull="false" multiline="false" align="left" />
+  </panels>
+</infReport>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<infReport version="2" columncount="40" pagerow="30">
+  <panels table="Current" type="header">
+    <bricks font="10" field="CurrentName" format="{0} HESAP EKSTRESI" left="0" width="35" row="0" shownull="false" multiline="false" align="center"/>
+    <bricks font="00" field="systemtime" format="{0:dd.MM.yyyy HH:mm}" left="6" width="25" row="1" shownull="false" multiline="false" align="left"/>
+    <bricks field="CustomerID" format=" " left="0" width="40" row="2" shownull="false" multiline="false" align="none"/>
+    <bricks field="CustomerID" format=" " left="0" width="40" row="3" shownull="false" multiline="false" align="none"/>
+    <bricks field="CustomerID" format="#lastorderDate#" left="0" width="35" row="4" shownull="false" multiline="false" align="center"/>
+    <bricks field="CustomerID" format="________________________________________" left="0" width="40" row="5" shownull="false" multiline="false" align="none"/>
+    <bricks field="CustomerID" format="TARIH CEK#      BORC       ALACAK     BAKIYE " left="0" width="40" row="6" shownull="false" multiline="false" align="none"/>
+    <bricks field="CustomerID" format="----- ------   --------   ---------   --------" left="0" width="40" row="7" shownull="false" multiline="false" align="none"/>
+  </panels>
+  <panels table="Detail" type="detail">
+    <bricks field="Date" format="{0:dd/MM}" left="0" width="5" row="0" shownull="false" multiline="false" align="left"/>
+    <bricks field="OrderId" format="{0}" left="6" width="7" row="0" shownull="false" multiline="false" align="left"/>
+    <bricks field="Debit" format="{0:n2}" left="15" width="8" row="0" shownull="false" multiline="false" align="right"/>
+    <bricks field="Credit" format="{0:n2}" left="24" width="8" row="0" shownull="false" multiline="false" align="right"/>
+    <bricks field="Balance" format="{0:n2}" left="34" width="8" row="0" shownull="false" multiline="false" align="right"/>
+  </panels>
+  <panels table="Current" type="header">
+    <bricks field="CustomerID" format=" " left="0" width="40" row="0" shownull="false" multiline="false" align="none"/>
+    <bricks field="CustomerID" format="robotPOS INFINIA ver. 2012.08" left="0" width="40" row="1" shownull="false" multiline="false" align="left" />
+    <bricks field="CustomerID" format=" " left="0" width="40" row="2" shownull="false" multiline="false" align="none"/>
+  </panels>
+</infReport>
